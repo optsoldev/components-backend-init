@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Flunt" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Optsol.Components.Application" Version="1.12.2" />
+    <PackageReference Include="Optsol.Components.Infra" Version="1.12.2" />
+    <PackageReference Include="Optsol.Components.Infra.CrossCutting" Version="1.12.2" />
+    <PackageReference Include="Optsol.Components.Service" Version="1.12.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Project.Application\Template.Project.Application.csproj" />
+    <ProjectReference Include="..\Template.Project.Domain\Template.Project.Domain.csproj" />
+    <ProjectReference Include="..\Template.Project.Infra.Data\Template.Project.Infra.Data.csproj" />
+    <ProjectReference Include="..\Template.Project.Infra\Template.Project.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
