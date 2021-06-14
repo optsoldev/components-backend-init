@@ -13,7 +13,7 @@ namespace Template.Project.Api.Controllers
         public ComponentsController(
             ILoggerFactory logger,
             IResponseFactory responseFactory,
-            IBaseServiceApplication<Example, ExampleViewModel, ExampleViewModel, ExampleViewModel, ExampleViewModel> serviceApplication) 
+            IBaseServiceApplication<Example> serviceApplication) 
             : base(logger, serviceApplication, responseFactory)
         {
 

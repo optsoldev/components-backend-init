@@ -29,6 +29,8 @@ namespace Template.Project.Api
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = this.Configuration.GetSection("ConnectionStrings:DefaultConnection");
+            
+            services.AddHealthChecks(Configuration);
 
             services.AddContext<TemplateContext>(options =>
             {
@@ -38,17 +40,18 @@ namespace Template.Project.Api
                     .EnabledLogging();
 
             });
-            services.AddRepository<IExampleReadRepository, ExampleReadRepository>("Template.Project.Domain", "Template.Project.Infra");
             services.AddDomainService<IExampleDomainService, ExampleDomainService>("Template.Project.Domain", "Template.Project.Infra");
-            services.AddApplications<IExampleServiceApplication, ExampleServiceApplication>("Template.Project.Application");
+            services.AddApplications(options =>
+            {
+                options.ConfigureServices<IExampleServiceApplication, ExampleServiceApplication>("Template.Project.Application");
+                options.ConfigureAutoMapper<ViewModelToEntityMapper>();
+            });
             services.AddDomainNotifications();
             services.AddServices();
 
             services.AddCors(Configuration);
             services.AddSecurity(Configuration);
             services.AddSwagger(Configuration);
-
-            services.AddAutoMapper(typeof(ViewModelToEntityMapper));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -67,6 +70,8 @@ namespace Template.Project.Api
             app.UseCors(Configuration);
 
             app.UseSwagger(Configuration, env.IsDevelopment());
+
+            app.UseHealthChecks(Configuration);
 
             app.UseEndpoints(endpoints =>
             {
