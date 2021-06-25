@@ -12,10 +12,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Optsol.Components.Application" Version="1.15.0" />
-    <PackageReference Include="Optsol.Components.Infra" Version="1.15.0" />
-    <PackageReference Include="Optsol.Components.Infra.CrossCutting" Version="1.15.0" />
-    <PackageReference Include="Optsol.Components.Service" Version="1.15.0" />
+    <PackageReference Include="Optsol.Components.Application" Version="1.16.1" />
+    <PackageReference Include="Optsol.Components.Infra" Version="1.16.1" />
+    <PackageReference Include="Optsol.Components.Infra.CrossCutting" Version="1.16.1" />
+    <PackageReference Include="Optsol.Components.Service" Version="1.16.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
