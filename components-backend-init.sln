@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - Solution Items", "{D843B0A6-3D5F-4075-9442-BF9CCAF12592}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Project.Driving.Api", "src\Template.Project.Driving.Api\Template.Project.Driving.Api.csproj", "{97D63636-70FB-4C43-90B3-FA13B408BF99}"
