@@ -29,17 +29,11 @@ builder.Services.AddApplications(options =>
 builder.Services.AddDomainNotifications();
 builder.Services.AddServices();
 
-//builder.Services.AddCors(builder.Configuration);
+builder.Services.AddCors(builder.Configuration);
 //builder.Services.AddSecurity(builder.Configuration);
-//builder.Services.AddSwagger(builder.Configuration);
+builder.Services.AddSwagger(builder.Configuration);
 
 var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 app.UseHttpsRedirection();
 
@@ -47,9 +41,9 @@ app.UseRouting();
 
 //app.UseSecurity(builder.Configuration);
 
-//app.UseCors(builder.Configuration);
+app.UseCors(builder.Configuration);
 
-//app.UseSwagger(builder.Configuration, app.Environment.IsDevelopment());
+app.UseSwagger(builder.Configuration, app.Environment.IsDevelopment());
 
 app.UseHealthChecks(builder.Configuration);
 
