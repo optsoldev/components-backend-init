@@ -1,8 +1,8 @@
 ﻿using Optsol.Components.Application.Services;
 using Optsol.Components.Service.Controllers;
 using Optsol.Components.Service.Responses;
-using Template.Project.Core.Application.Models;
-using Template.Project.Core.Domain.Entities;
+using Template.Project.Core.Application.Examples;
+using Template.Project.Core.Domain.Examples;
 
 namespace Template.Project.Driving.WebApi.Controllers
 {

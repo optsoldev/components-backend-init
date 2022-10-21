@@ -1,10 +1,9 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using System;
+using Microsoft.Extensions.Logging;
 using Optsol.Components.Infra.Data;
-using System;
-using Template.Project.Core.Domain.Entities;
-using Template.Project.Core.Domain.Repositories;
+using Template.Project.Core.Domain.Examples;
 
-namespace Template.Project.Driven.Infra.Data.Repositories
+namespace Template.Project.Driven.Infra.Data.Examples
 {
     public class ExampleReadRepository : Repository<Example, Guid>, IExampleReadRepository
     {

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace Template.Project.Core.Application.Mappers
+namespace Template.Project.Core.Application.Examples
 {
     public class EntityMapperToViewModel : Profile
     {

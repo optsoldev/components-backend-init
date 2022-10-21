@@ -1,4 +1,4 @@
-﻿namespace Template.Project.Core.Application.Services
+﻿namespace Template.Project.Core.Application.Examples
 {
     public class ExampleServiceApplication : IExampleServiceApplication
     {

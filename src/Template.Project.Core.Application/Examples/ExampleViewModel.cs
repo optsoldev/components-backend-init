@@ -1,6 +1,6 @@
 ﻿using Optsol.Components.Application.DataTransferObjects;
 
-namespace Template.Project.Core.Application.Models
+namespace Template.Project.Core.Application.Examples
 {
     public class ExampleViewModel : BaseDataTransferObject
     {

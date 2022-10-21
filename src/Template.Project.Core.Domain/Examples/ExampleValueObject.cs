@@ -1,6 +1,6 @@
 ﻿using Optsol.Components.Domain.ValueObjects;
 
-namespace Template.Project.Core.Domain.ValueObjects
+namespace Template.Project.Core.Domain.Examples
 {
     public class ExampleValueObject : ValueObject
     {

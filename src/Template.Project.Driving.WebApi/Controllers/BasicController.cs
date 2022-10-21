@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Optsol.Components.Service.Controllers;
 using Optsol.Components.Service.Responses;
-using Template.Project.Core.Application.Models;
+using Template.Project.Core.Application.Examples;
 
 namespace Template.Project.Driving.WebApi.Controllers
 {

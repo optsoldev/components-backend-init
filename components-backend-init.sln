@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - S
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Project.Driving.Api", "src\Template.Project.Driving.Api\Template.Project.Driving.Api.csproj", "{97D63636-70FB-4C43-90B3-FA13B408BF99}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Project.Core.Domain", "src\Template.Project.Core.Domain\Template.Project.Core.Domain.csproj", "{BC1D1F0E-7ABB-417F-8E9F-9F8FE9BC54A6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Project.Driven.Infra", "src\Template.Project.Driven.Infra\Template.Project.Driven.Infra.csproj", "{EEF2A878-A2C1-4651-BFA4-0DD62FA688CC}"
@@ -41,18 +39,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Debug|x64.Build.0 = Debug|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Debug|x86.Build.0 = Debug|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Release|x64.ActiveCfg = Release|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Release|x64.Build.0 = Release|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Release|x86.ActiveCfg = Release|Any CPU
-		{97D63636-70FB-4C43-90B3-FA13B408BF99}.Release|x86.Build.0 = Release|Any CPU
 		{BC1D1F0E-7ABB-417F-8E9F-9F8FE9BC54A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC1D1F0E-7ABB-417F-8E9F-9F8FE9BC54A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC1D1F0E-7ABB-417F-8E9F-9F8FE9BC54A6}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -148,7 +134,6 @@ Global
 		{5E79E3EE-114F-42EE-8D3B-9BAA46497AB9} = {70719BB9-CADB-4D5E-8ED6-6573AEC4283B}
 		{7F156233-A5FF-44EC-941E-61D47218D1D9} = {590A7241-A329-4C37-A4F2-1CE0A0C9A033}
 		{EEF2A878-A2C1-4651-BFA4-0DD62FA688CC} = {590A7241-A329-4C37-A4F2-1CE0A0C9A033}
-		{97D63636-70FB-4C43-90B3-FA13B408BF99} = {590A7241-A329-4C37-A4F2-1CE0A0C9A033}
 		{29102441-3FB8-40C0-8AE8-A24CE7FA4DF7} = {590A7241-A329-4C37-A4F2-1CE0A0C9A033}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

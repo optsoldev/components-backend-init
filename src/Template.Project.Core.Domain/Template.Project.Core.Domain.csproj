@@ -8,4 +8,16 @@
     <PackageReference Include="Optsol.Components.Domain" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Entities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\**" />
+  </ItemGroup>
+
 </Project>

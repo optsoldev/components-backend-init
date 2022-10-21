@@ -1,6 +1,6 @@
 ﻿using Optsol.Components.Domain.Entities;
 
-namespace Template.Project.Core.Domain.Entities
+namespace Template.Project.Core.Domain.Examples
 {
     public class Example : AggregateRoot
     {

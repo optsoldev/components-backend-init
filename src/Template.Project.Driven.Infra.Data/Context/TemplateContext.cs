@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Optsol.Components.Infra.Data;
-using Template.Project.Driven.Infra.Data.EntityConfigs;
+using Template.Project.Driven.Infra.Data.Examples;
 
 namespace Template.Project.Driven.Infra.Data.Context
 {

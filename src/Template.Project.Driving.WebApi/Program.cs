@@ -1,8 +1,7 @@
-using Template.Project.Core.Application.Mappers;
-using Template.Project.Core.Application.Services;
-using Template.Project.Core.Domain.Services;
+using Template.Project.Core.Application.Examples;
+using Template.Project.Core.Domain.Examples;
 using Template.Project.Driven.Infra.Data.Context;
-using Template.Project.Driven.Infra.Services;
+using Template.Project.Driven.Infra.Examples;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Optsol.Components.Infra.Data;
-using System;
-using Template.Project.Core.Domain.Entities;
+using Template.Project.Core.Domain.Examples;
 
-namespace Template.Project.Driven.Infra.Data.EntityConfigs
+namespace Template.Project.Driven.Infra.Data.Examples
 {
     public class ExampleConfiguration : EntityConfigurationBase<Example, Guid>
     {
