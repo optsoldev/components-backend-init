@@ -14,8 +14,8 @@
     </ItemGroup>
     
     <ItemGroup>
-      <PackageReference Include="Optsol.Components.Infra.CrossCutting" Version="2.1.1" />
-      <PackageReference Include="Optsol.Components.Service" Version="2.1.1" />
+      <PackageReference Include="Optsol.Components.Infra.HealthChecks" Version="2.3.0" />
+      <PackageReference Include="Optsol.Components.Service" Version="2.3.0" />
     </ItemGroup>
 
 </Project>

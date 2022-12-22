@@ -17,7 +17,7 @@ namespace Template.Project.Driving.WebApi.Controllers
         {
             await Task.CompletedTask;
 
-            return Ok();
+            return CreateResult();
         }
 
         [HttpGet("{id}")]
@@ -25,31 +25,31 @@ namespace Template.Project.Driving.WebApi.Controllers
         {
             await Task.CompletedTask;
 
-            return Ok(id);
+            return CreateResult();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ExampleViewModel model)
+        public async Task<IActionResult> Post([FromBody] ExampleRequestModel model)
         {
             await Task.CompletedTask;
 
-            return Ok(model);
+            return CreateResult(model);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put([FromBody] ExampleViewModel model)
+        public async Task<IActionResult> Put([FromBody] ExampleRequestModel model)
         {
             await Task.CompletedTask;
 
-            return Ok(model);
+            return CreateResult(model);
         }
 
         [HttpPatch]
-        public async Task<IActionResult> Patch([FromBody] ExampleViewModel model)
+        public async Task<IActionResult> Patch([FromBody] ExampleRequestModel model)
         {
             await Task.CompletedTask;
 
-            return Ok(model);
+            return CreateResult(model);
         }
 
         [HttpDelete("{id}")]
@@ -57,7 +57,7 @@ namespace Template.Project.Driving.WebApi.Controllers
         {
             await Task.CompletedTask;
 
-            return Ok(id);
+            return CreateResult();
         }
     }
 }

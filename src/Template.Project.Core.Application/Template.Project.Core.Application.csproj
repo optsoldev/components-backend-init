@@ -6,7 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Optsol.Components.Application" Version="2.1.1" />
+    <PackageReference Include="Optsol.Components.Application" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Project.Core.Domain\Template.Project.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

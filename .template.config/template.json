@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "OPTSOL",
+    "identity": "Optsol.Template",
+    "name": "Optsol template structure",
+    "shortName": "optsol",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Template.Project",
+    "classifications": ["Template"]
+  }

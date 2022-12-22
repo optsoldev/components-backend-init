@@ -1,7 +1,8 @@
 using Template.Project.Core.Application.Examples;
+using Template.Project.Core.Application.Examples.Mappers;
 using Template.Project.Core.Domain.Examples;
 using Template.Project.Driven.Infra.Data.Context;
-using Template.Project.Driven.Infra.Examples;
+using Template.Project.Driven.Infra.Data.Examples;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,14 +22,19 @@ builder.Services.AddContext<TemplateContext>(options =>
     options
         .ConfigureConnectionString(connectionString.Value)
         .ConfigureMigrationsAssemblyName("Template.Project.Driven.Infra")
-        .EnabledLogging();
+        .EnabledLogging()
+        .ConfigureRepositories<IExampleReadRepository, ExampleReadRepository>(
+            typeof(IExampleReadRepository).Assembly.FullName,
+            typeof(ExampleReadRepository).Assembly.FullName);
 
 });
 
-builder.Services.AddDomainService<IExampleDomainService, ExampleDomainService>("Template.Project.Core.Domain", "Template.Project.Driven.Infra");
+builder.Services.AddDomainService<IExampleDomainService, ExampleDomainService>(typeof(IExampleDomainService).Assembly.FullName, 
+    typeof(ExampleDomainService).Assembly.FullName);
+
 builder.Services.AddApplications(options =>
 {
-    options.ConfigureServices<IExampleServiceApplication, ExampleServiceApplication>("Template.Project.Core.Application");
+    options.ConfigureServices<IExampleServiceApplication, ExampleServiceApplication>(typeof(IExampleServiceApplication).Assembly.FullName);
     options.ConfigureAutoMapper<ViewModelToEntityMapper>();
 });
 
@@ -49,8 +55,6 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseHealthChecks(builder.Configuration);
-
-app.UseAuthorization();
 
 app.MapControllers();
 

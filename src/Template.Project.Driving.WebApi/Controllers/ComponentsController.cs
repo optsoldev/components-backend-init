@@ -6,7 +6,7 @@ using Template.Project.Core.Domain.Examples;
 
 namespace Template.Project.Driving.WebApi.Controllers
 {
-    public class ComponentsController : ApiControllerBase<Example, ExampleViewModel, ExampleViewModel, ExampleViewModel>
+    public class ComponentsController : ApiControllerBase<Example, ExampleRequestModel, ExampleResponseModel, ExampleSearchModel>
     {
         public ComponentsController(
             ILoggerFactory logger,
