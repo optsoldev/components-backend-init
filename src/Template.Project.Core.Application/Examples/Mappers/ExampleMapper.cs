@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
+using Optsol.Components.Infra.Data.Pagination;
 using Template.Project.Core.Domain.Examples;
 
 namespace Template.Project.Core.Application.Examples.Mappers;
 
-public class EntityMapperToViewModel : Profile
+public class ExampleMapper : Profile
 {
-    public EntityMapperToViewModel()
+    public ExampleMapper()
     {
         CreateMap<ExampleRequestModel, Example>().ConstructUsing(x => new Example());
         CreateMap<Example, ExampleResponseModel>();
+        CreateMap<SearchResult<Example>, SearchResult<ExampleResponseModel>>();
     }
 }

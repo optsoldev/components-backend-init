@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
-    <PackageReference Include="Optsol.Components.Application" Version="2.3.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="Optsol.Components.Application" Version="2.3.3" />
   </ItemGroup>
 
   <ItemGroup>
